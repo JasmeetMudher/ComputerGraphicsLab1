@@ -31,7 +31,6 @@ ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
-
 ctx.set_source_rgb(0,0,0)
 ctx.rectangle(423, 420, 155, 155)  # Adjusted y from 350 to 420
 ctx.fill()
