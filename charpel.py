@@ -5,6 +5,7 @@ ctx = cairo.Context(surface)
 ctx.set_source_rgb(1, 1, 1)
 ctx.paint()
 
+
 #Cross
 ctx.set_source_rgb(0,0,0)
 ctx.move_to(400,50)
