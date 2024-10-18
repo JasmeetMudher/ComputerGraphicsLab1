@@ -8,64 +8,60 @@ ctx.paint()
 ### Cross
 ctx.set_source_rgb(0, 0, 0)
 # Horizontal rectangle (top part of the cross)
-ctx.rectangle(469, 178, 62, 17)  # Adjusted y from 108 to 178
+ctx.rectangle(469, 178, 62, 17)
 ctx.fill()
-
 # Vertical rectangle (bottom part of the cross)
-ctx.rectangle(494, 153, 12, 92)  # Adjusted y from 83 to 153
+ctx.rectangle(494, 153, 12, 92)
 ctx.fill()
 
 ### Cross Pillar
-ctx.move_to(494, 245)  # Adjusted y from 175 to 245
-ctx.line_to(481, 270)  # Adjusted y from 200 to 270
-ctx.line_to(469, 403)  # Adjusted y from 333 to 403
-ctx.line_to(531, 403)  # Adjusted y from 333 to 403
-ctx.line_to(519, 270)  # Adjusted y from 200 to 270
-ctx.line_to(506, 245)  # Adjusted y from 175 to 245
+ctx.move_to(494, 245)
+ctx.line_to(481, 270)
+ctx.line_to(469, 403)
+ctx.line_to(531, 403)
+ctx.line_to(519, 270)
+ctx.line_to(506, 245)
 ctx.close_path()
 ctx.fill()
 
 ### Top Window
-ctx.rectangle(413, 403, 175, 17)  # Adjusted y from 333 to 403
+ctx.rectangle(413, 403, 175, 17)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
 
 ctx.set_source_rgb(0,0,0)
-ctx.rectangle(423, 420, 155, 155)  # Adjusted y from 350 to 420
+ctx.rectangle(423, 420, 155, 155)
 ctx.fill()
 
-ctx.arc(500, 460, 31, math.pi, 0)  # Adjusted y from 390 to 460
+ctx.arc(500, 460, 31, math.pi, 0)
 ctx.set_source_rgb(1,1,1)
 ctx.fill()
 
-ctx.rectangle(469, 460, 62, 100)  # Adjusted y from 390 to 460
+ctx.rectangle(469, 460, 62, 100)
 ctx.fill()
 
-# Roof
-ctx.rectangle(350, 570, 300, 28)  # Increased height of the middle section to 30 pixels
+### Roof
+ctx.rectangle(350, 570, 300, 28)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
-
 # Left Roof Section
-ctx.move_to(350, 570)  # Top middle of the roof
-ctx.line_to(245, 670)  # Adjusted to make the left slope
-ctx.line_to(260, 680)  # Reduced height by 20 pixels (from 690 to 680)
-ctx.line_to(350, 598)  # Back to the middle
+ctx.move_to(350, 570)
+ctx.line_to(245, 670)
+ctx.line_to(260, 680)
+ctx.line_to(350, 598)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
-
-# Right Roof Section (Adjusted for symmetry)
-ctx.move_to(350, 570)  # Top middle of the roof
-ctx.line_to(455, 670)  # Adjusted to make the right slope
-ctx.line_to(440, 680)  # Reduced height by 20 pixels (from 690 to 680)
-ctx.line_to(350, 598)  # Back to the middle
+# Right Roof Section
+ctx.move_to(650, 570)
+ctx.line_to(755, 670)
+ctx.line_to(740, 680)
+ctx.line_to(650, 598)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
-
 
 
 
