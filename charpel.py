@@ -5,19 +5,17 @@ ctx = cairo.Context(surface)
 ctx.set_source_rgb(1, 1, 1)
 ctx.paint()
 
-# Cross
+### Cross
 ctx.set_source_rgb(0, 0, 0)
-
 # Horizontal rectangle (top part of the cross)
 ctx.rectangle(469, 108, 62, 17)  # Width of 62 (from 469 to 531), height of 17 (from 108 to 125)
 ctx.fill()
-
 # Vertical rectangle (bottom part of the cross)
 ctx.rectangle(494, 83, 12, 92)  # Width of 12 (from 494 to 506), height of 92 (from 83 to 175)
 ctx.fill()
 
 
-# Cross Pillar
+### Cross Pillar
 ctx.move_to(494, 175)
 ctx.line_to(481, 200)
 ctx.line_to(469, 333)
@@ -27,7 +25,7 @@ ctx.line_to(506, 175)
 ctx.close_path()
 ctx.fill()
 
-# Top Window
+### Top Window
 ctx.rectangle(413, 333, 175, 17)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
@@ -41,9 +39,32 @@ ctx.fill()
 ctx.arc(500,390,31,math.pi,0)
 ctx.set_source_rgb(1,1,1)
 ctx.fill()
+
 ctx.rectangle(469,390,62,100)
 ctx.fill()
 
+# Roof
+ctx.rectangle(385, 500, 231, 20)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill_preserve()
+ctx.set_source_rgb(1, 1, 1)
+ctx.stroke()
+
+# Left Roof Section
+ctx.move_to(386, 501)
+ctx.line_to(285, 600)
+ctx.line_to(285, 620)
+ctx.line_to(386, 520)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill()
+
+# Right Roof Section
+ctx.move_to(615, 501)
+ctx.line_to(715, 600)
+ctx.line_to(715, 620)
+ctx.line_to(615, 520)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill()
 
 # Draw the house base (black rectangle)
 ctx.set_source_rgb(0, 0, 0)  # Set color to black
