@@ -48,6 +48,7 @@ ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
+
 # Left Roof Section
 ctx.move_to(350, 570)
 ctx.line_to(245, 670)
@@ -55,6 +56,7 @@ ctx.line_to(260, 680)
 ctx.line_to(350, 598)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
+
 # Right Roof Section
 ctx.move_to(650, 570)
 ctx.line_to(755, 670)
