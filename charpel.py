@@ -43,7 +43,7 @@ ctx.fill()
 ctx.rectangle(469,390,62,100)
 ctx.fill()
 
-# Roof
+# Chapel Roof
 ctx.rectangle(385, 500, 231, 20)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
