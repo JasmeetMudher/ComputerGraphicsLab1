@@ -8,66 +8,66 @@ ctx.paint()
 ### Cross
 ctx.set_source_rgb(0, 0, 0)
 # Horizontal rectangle (top part of the cross)
-ctx.rectangle(469, 178, 62, 17)  # Adjusted y from 108 to 178
+ctx.rectangle(469, 178, 62, 17)
 ctx.fill()
 
 # Vertical rectangle (bottom part of the cross)
-ctx.rectangle(494, 153, 12, 92)  # Adjusted y from 83 to 153
+ctx.rectangle(494, 153, 12, 92)
 ctx.fill()
 
 ### Cross Pillar
-ctx.move_to(494, 175)
-ctx.line_to(481, 200)
-ctx.line_to(469, 333)
-ctx.line_to(531, 333)
-ctx.line_to(519, 200)
-ctx.line_to(506, 175)
+ctx.move_to(494, 245)
+ctx.line_to(481, 270)
+ctx.line_to(469, 403)
+ctx.line_to(531, 403)
+ctx.line_to(519, 270)
+ctx.line_to(506, 245)
 ctx.close_path()
 ctx.fill()
 
 ### Top Window
-ctx.rectangle(413, 333, 175, 17)
+ctx.rectangle(413, 403, 175, 17)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
-
 ctx.set_source_rgb(0,0,0)
-ctx.rectangle(423,350,155,155)
+ctx.rectangle(423, 420, 155, 155)
 ctx.fill()
 
-ctx.arc(500,390,31,math.pi,0)
+ctx.arc(500, 460, 31, math.pi, 0)
 ctx.set_source_rgb(1,1,1)
 ctx.fill()
 
-ctx.rectangle(469,390,62,100)
+ctx.rectangle(469, 460, 62, 100)
 ctx.fill()
 
-# Chapel Roof
-ctx.rectangle(385, 500, 231, 20)
+# Roof
+ctx.rectangle(350, 570, 300, 30)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
 
 # Left Roof Section
-ctx.move_to(386, 501)
-ctx.line_to(285, 600)
-ctx.line_to(285, 620)
-ctx.line_to(386, 520)
+ctx.move_to(350, 571)
+ctx.line_to(250, 660)
+ctx.line_to(260, 680)
+ctx.line_to(350, 600)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
 # Right Roof Section
-ctx.move_to(615, 501)
-ctx.line_to(715, 600)
-ctx.line_to(715, 620)
-ctx.line_to(615, 520)
+ctx.move_to(650, 571)
+ctx.line_to(750, 660)
+ctx.line_to(750, 680)
+ctx.line_to(650, 600)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
-# Draw the house base
-ctx.set_source_rgb(0, 0, 0)
+
+# Draw the house base (black rectangle)
+ctx.set_source_rgb(0, 0, 0)  # Set color to black
 ctx.rectangle(100, 800, 800, 150)
 ctx.fill()
 
@@ -101,7 +101,7 @@ ctx.fill()
 # Draw the polygon structure on top (the additional shape)
 ctx.set_source_rgb(0, 0, 0)
 
-# The polygon shape
+# Define points for the polygon shape
 ctx.move_to(300, 980)  # Bottom-left corner of the polygon
 ctx.line_to(300, 650)  # Left vertical
 ctx.line_to(350, 600)  # Slant left
@@ -110,7 +110,6 @@ ctx.line_to(700, 650)  # Slant right
 ctx.line_to(700, 980)  # Right vertical
 ctx.line_to(300, 980)  # Bottom horizontal
 
-# Fill the shape
 ctx.fill()
 
 # Add white stroke around the polygon
@@ -128,7 +127,7 @@ ctx.close_path()
 # Stroke the polygon
 ctx.stroke()
 
-# A white circle in the middle of the polygon
+# Add a white circle in the middle of the polygon
 ctx.set_source_rgb(1, 1, 1)
 ctx.arc(505, 660, 35, 0, 2 * math.pi)
 ctx.fill()
