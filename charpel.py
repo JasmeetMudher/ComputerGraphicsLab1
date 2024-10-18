@@ -44,25 +44,25 @@ ctx.rectangle(469, 460, 62, 100)  # Adjusted y from 390 to 460
 ctx.fill()
 
 # Roof
-ctx.rectangle(385, 570, 231, 20)  # Adjusted y from 500 to 570
+ctx.rectangle(350, 570, 300, 30)  # Adjusted y from 500 to 570
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
 
 # Left Roof Section
-ctx.move_to(386, 571)  # Adjusted y from 501 to 571
-ctx.line_to(285, 670)  # Adjusted y from 600 to 670
-ctx.line_to(285, 690)  # Adjusted y from 620 to 690
-ctx.line_to(386, 590)  # Adjusted y from 520 to 590
+ctx.move_to(350, 571)  # Adjusted y from 501 to 571
+ctx.line_to(250, 660)  # Adjusted y from 600 to 670
+ctx.line_to(260, 680)  # Adjusted y from 620 to 690
+ctx.line_to(350, 600)  # Adjusted y from 520 to 590
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
 # Right Roof Section
-ctx.move_to(615, 571)  # Adjusted y from 501 to 571
-ctx.line_to(715, 670)  # Adjusted y from 600 to 670
-ctx.line_to(715, 690)  # Adjusted y from 620 to 690
-ctx.line_to(615, 590)  # Adjusted y from 520 to 590
+ctx.move_to(650, 571)  # Adjusted y from 501 to 571
+ctx.line_to(750, 660)  # Adjusted y from 600 to 670
+ctx.line_to(750, 680)  # Adjusted y from 620 to 690
+ctx.line_to(650, 600)  # Adjusted y from 520 to 590
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
