@@ -44,25 +44,25 @@ ctx.rectangle(469,390,62,100)
 ctx.fill()
 
 # Chapel Roof
-ctx.rectangle(385, 500, 231, 20)
+ctx.rectangle(385, 550, 231, 20)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
 ctx.stroke()
 
 # Left Roof Section
-ctx.move_to(386, 501)
-ctx.line_to(285, 600)
-ctx.line_to(285, 620)
-ctx.line_to(386, 520)
+ctx.move_to(386, 551)
+ctx.line_to(285, 650)
+ctx.line_to(285, 670)
+ctx.line_to(386, 570)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
 # Right Roof Section
-ctx.move_to(615, 501)
-ctx.line_to(715, 600)
-ctx.line_to(715, 620)
-ctx.line_to(615, 520)
+ctx.move_to(615, 551)
+ctx.line_to(715, 650)
+ctx.line_to(715, 670)
+ctx.line_to(615, 570)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
