@@ -1,44 +1,47 @@
 import cairo
-
+import math
 surface =cairo.ImageSurface(cairo.FORMAT_RGB24, 1000, 1000)
 ctx = cairo.Context(surface)
 ctx.set_source_rgb(1, 1, 1)
 ctx.paint()
 
-#Cross
+# Cross
+ctx.set_source_rgb(0, 0, 0)
+
+# Horizontal rectangle (top part of the cross)
+ctx.rectangle(469, 108, 62, 17)  # Width of 62 (from 469 to 531), height of 17 (from 108 to 125)
+ctx.fill()
+
+# Vertical rectangle (bottom part of the cross)
+ctx.rectangle(494, 83, 12, 92)  # Width of 12 (from 494 to 506), height of 92 (from 83 to 175)
+ctx.fill()
+
+
+# Cross Pillar
+ctx.move_to(494, 175)
+ctx.line_to(481, 200)
+ctx.line_to(469, 333)
+ctx.line_to(531, 333)
+ctx.line_to(519, 200)
+ctx.line_to(506, 175)
+ctx.close_path()
+ctx.fill()
+
+# Top Window
+ctx.rectangle(413, 333, 175, 17)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill_preserve()
+ctx.set_source_rgb(1, 1, 1)
+ctx.stroke()
+
 ctx.set_source_rgb(0,0,0)
-ctx.move_to(400,50)
-ctx.line_to(395,50)
-ctx.line_to(395,65)
-ctx.line_to(375,65)
-ctx.line_to(375,75)
-ctx.line_to(395,75)
-ctx.line_to(395,105)
-ctx.line_to(405,105)
-ctx.line_to(405,75)
-ctx.line_to(425,75)
-ctx.line_to(425,65)
-ctx.line_to(405,65)
-ctx.line_to(405,50)
-ctx.close_path()
+ctx.rectangle(423,350,155,155)
 ctx.fill()
 
-
-#CrossPillar
-ctx.move_to(395,105)
-ctx.line_to(385,120)
-ctx.line_to(375,200)
-ctx.line_to(425,200)
-ctx.line_to(415,120)
-ctx.line_to(405,105)
-ctx.close_path()
-ctx.fill()
-
-#Top window
-ctx.rectangle(330,200,140,10)
+ctx.arc(500,390,31,math.pi,0)
 ctx.set_source_rgb(1,1,1)
-ctx.stroke_preserve()
-ctx.set_source_rgb(0,0,0)
+ctx.fill()
+ctx.rectangle(469,390,62,100)
 ctx.fill()
 
 
