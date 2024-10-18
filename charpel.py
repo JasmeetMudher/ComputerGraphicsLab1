@@ -128,6 +128,12 @@ ctx.close_path()
 # Stroke the polygon
 ctx.stroke()
 
+# Add a white circle in the middle of the polygon
+ctx.set_source_rgb(1, 1, 1)  # Set color to white
+ctx.arc(500, 660, 35, 0, 2 * math.pi)  # Draw the circle
+ctx.fill()
+
+
 
 
 
