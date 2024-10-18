@@ -24,13 +24,19 @@ ctx.fill()
 ctx.rectangle(750, 850, 50, 50)  # Right window
 ctx.fill()
 
-# Draw the roof (black triangle)
+
+
 ctx.set_source_rgb(0, 0, 0)  # Set color to black
-ctx.move_to(80, 200)  # Starting point of the triangle
-ctx.line_to(250, 100)  # Peak of the roof
-ctx.line_to(420, 200)  # Right end of the roof
+
+# Define the four points of the trapezium (x, y)
+ctx.move_to(50, 796)  # Bottom-left point
+ctx.line_to(950, 796)  # Bottom-right point
+ctx.line_to(860, 700)  # Top-right point
+ctx.line_to(140, 700)  # Top-left point
 ctx.close_path()  # Connect back to the starting point
+
 ctx.fill()
+
 
 
 
